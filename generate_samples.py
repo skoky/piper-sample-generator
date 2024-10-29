@@ -446,7 +446,7 @@ def main() -> None:
 
     # Get command line arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument("text")
+    parser.add_argument("--text", nargs='+')
     parser.add_argument("--max-samples", required=True, type=int)
     parser.add_argument(
         "--model", default=_DIR / "models" / "en_US-libritts_r-medium.pt"
